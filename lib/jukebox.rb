@@ -34,8 +34,6 @@ def play(songs)
   #   puts "Playing #{user_response}"
   if songs.include?(user_response)
     puts "Playing #{user_response}"
-  elsif 0 < user_response <= 9 
-    puts "Playing #{songs[user_response -1]}"
   else 
     puts "Invalid input, please try again"
   end
