@@ -29,7 +29,7 @@ def play(songs)
   user_response = gets.strip 
   if (1..9).to_a.include?(user_response.to_i)
     user_response = songs [user_response - 1]
-    puts user_response
+    px user_response
   end
   if songs.include?(user_response)
     puts "Playing #{user_response}"
