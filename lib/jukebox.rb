@@ -30,8 +30,6 @@ def play(songs)
   if user_response.is_a? Integer
     user_response = songs [user_response - 1]
   end
-  # if songs.include?(user_response) || 0 < user_response <= 9 
-  #   puts "Playing #{user_response}"
   if songs.include?(user_response)
     puts "Playing #{user_response}"
   else 
