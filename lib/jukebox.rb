@@ -27,7 +27,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip 
-  if user_response.is_a? Integer
+  if []
     user_response = songs [user_response - 1]
   end
   if songs.include?(user_response)
